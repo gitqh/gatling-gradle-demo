@@ -1,0 +1,25 @@
+plugins {
+    id 'scala'
+    id "com.github.lkishalmi.gatling" version "3.0.2"
+}
+
+gatling {
+    toolVersion = '3.2.0'
+    jvmArgs = [ '-server', '-Xms512M', '-Xmx512M' ]
+    simulations = {
+        include "**/*.scala"
+    }
+}
+
+group 'org.gitqh.gatling'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.13.0'
+    compile 'io.gatling.highcharts:gatling-charts-highcharts:3.2.0'
+}
