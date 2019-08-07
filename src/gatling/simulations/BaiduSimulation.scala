@@ -16,7 +16,7 @@ class BaiduSimulation extends Simulation {
   setUp(scn.inject(atOnceUsers(10))).protocols(httpConf)
 
   // 用10s时间启动500个线程
-//  setUp(scn.inject(rampUsers(500) over(10 seconds)).protocols(httpConf)
+//  setUp(scn.inject(rampUsers(50) over(10 seconds)).protocols(httpConf)
 
 
 }

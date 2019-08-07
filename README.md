@@ -1,2 +1,2 @@
-./gradlew gatlingRun-simulation.LoginSimulation
+./gradlew gatlingRun-simulations.LoginSimulation
 
